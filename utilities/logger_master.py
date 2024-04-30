@@ -76,6 +76,9 @@ def setup_logging(log_folder):
 
     # Set the log level
     logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.ERROR)
+    logger.setLevel(logging.CRITICAL)
 
     # Get the current date in the format yyyy_mm_dd
     current_date = datetime.datetime.now().strftime("%Y_%m_%d")
